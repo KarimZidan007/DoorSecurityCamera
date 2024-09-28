@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaplayer.LiveViewController">
+   <bottom>
+      <HBox prefHeight="51.0" prefWidth="600.0" styleClass="sideBottonContainer" stylesheets="@../syling/mediaplayer.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnStartRec" mnemonicParsing="false" onAction="#startRecordAction" prefHeight="41.0" prefWidth="63.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+               <graphic>
+                  <ImageView fx:id="startRecImg" fitHeight="31.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../syling/icons8-record-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnStopRec" mnemonicParsing="false" onAction="#stopRecordAction" prefHeight="41.0" prefWidth="86.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+               <graphic>
+                  <ImageView fx:id="StopRecImg" fitHeight="25.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../syling/icons8-stop-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Region prefHeight="36.0" prefWidth="277.0" stylesheets="@../syling/mediaplayer.css" HBox.hgrow="ALWAYS" />
+            <Button fx:id="returnMain" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#returnMainAction" prefHeight="41.0" prefWidth="81.0" stylesheets="@../syling/mediaplayer.css">
+               <graphic>
+                  <ImageView fx:id="startRecImg" fitHeight="29.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../syling/icons8-home-page-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="mainMenuButton" />
+                  <String fx:value="mainMenuButton" />
+               </styleClass>
+            </Button>
+            <Region prefHeight="59.0" prefWidth="22.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <ImageView fx:id="recordLable" fitHeight="40.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
+         <image>
+            <Image url="@../syling/rec-record.gif" />
+         </image>
+         <BorderPane.margin>
+            <Insets right="30.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+</BorderPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaplayer.FXMLDocumentController">
+   <center>
+      <StackPane prefHeight="476.0" prefWidth="960.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaVew" StackPane.alignment="TOP_CENTER" />
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="664.0" BorderPane.alignment="CENTER">
+         <children>
+            <Slider fx:id="sliderBar" prefHeight="25.0" prefWidth="664.0" stylesheets="@../syling/mediaplayer.css" />
+            <HBox fx:id="ButtonHbox" alignment="CENTER" prefHeight="65.0" prefWidth="600.0" styleClass="sideBottonContainer" stylesheets="@../syling/mediaplayer.css">
+               <children>
+                  <Button fx:id="choosebtn" mnemonicParsing="false" onAction="#ChooseFileAction" prefHeight="30.0" prefWidth="45.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-film-80.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Region prefHeight="39.0" prefWidth="17.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="slowBtn" mnemonicParsing="false" onAction="#SlowButtonAction" prefHeight="8.0" prefWidth="46.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-fast-forward-100%20-%20Copy.png" />
+                           </image>
+                           <styleClass>
+                              <String fx:value="control_buttons" />
+                              <String fx:value="control_buttons" />
+                           </styleClass>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="stopBtn" mnemonicParsing="false" onAction="#StopButtonAction" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-stop-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="playbtn" mnemonicParsing="false" onAction="#playButtonAction" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css" textFill="#3b4f2469">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" styleClass="control_buttons">
+                           <image>
+                              <Image url="@../syling/icons8-play-96.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="PauseBtn" mnemonicParsing="false" onAction="#PauseButtonAction" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-pause-button-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="fastBtn" mnemonicParsing="false" onAction="#fastButtonAction" prefHeight="33.0" prefWidth="45.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-fast-forward-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="plsTenSecBtn" mnemonicParsing="false" onAction="#plsTenSecondAction" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-forward-10-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="minusTenSecBtn" mnemonicParsing="false" onAction="#MinusTenSecondAction" prefHeight="34.0" prefWidth="40.0" styleClass="control_buttons" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-replay-10-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="timecount" prefHeight="34.0" prefWidth="88.0">
+                     <HBox.margin>
+                        <Insets right="-3.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region prefHeight="178.0" prefWidth="31.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="returnMain" mnemonicParsing="false" onAction="#returnMainAction" prefHeight="41.0" prefWidth="81.0" styleClass="mainMenuButton" stylesheets="@../syling/mediaplayer.css">
+                     <HBox.margin>
+                        <Insets right="14.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../syling/icons8-home-page-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

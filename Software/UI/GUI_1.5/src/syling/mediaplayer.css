@@ -1,0 +1,147 @@
+.playbtn{
+    
+    -fx-background-color: blue  ;
+    -fx-background-radius: 30; 
+    -fx-background-insets:  0 ; 
+    -fx-text-fill: white  
+}
+.jfx-playbtn{
+    -fx-background-color: blue;
+}
+
+
+.LiveBtn {
+    -fx-background-color: gray; /* Removes default button color */
+    -fx-background-image: url("C:\Users\asem\Documents\NetBeansProjects\MediaPlayer\src\syling\16630.png"); /* Path to the image */
+    -fx-background-size: contain; /* Adjusts the image size to fit the button */
+    -fx-background-repeat: no-repeat; /* Prevents repeating the image */
+    -fx-background-position: center; /* Centers the image on the button */
+    -fx-border-color: transparent; /* Optional: Removes any border */
+    -fx-padding: 10px; /* Adjust padding to control button size */
+    -fx-text-fill: transparent; /* Hides the button text */
+}
+
+
+.sideBottonContainer {
+    -fx-border-color: #4FC3F7; /* Border color matching the button */
+    -fx-border-width: 2; /* Width of the container border */
+    -fx-background-color: #A9D6F1; /* Lighter blue background */
+    -fx-padding: 10; /* Padding inside the container */
+    -fx-margin: 10; /* Margin around the container */
+}
+
+.sideButton {
+    -fx-text-fill: #003366; /* Darker blue text */
+     -fx-background-color:transparent; /* Darker blue button */
+    -fx-border-color: #5A9BD3; /* Border around the button */
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 5;
+    -fx-margin: 10; /* Margins around the button */
+   
+
+    -fx-transition: all 0.2s ease-in-out; /* Smooth transition for all changes */
+}
+
+.sideButton:hover {
+    -fx-background-color: #29B6F6; /* Slightly darker blue on hover */
+}
+
+.sideButton:pressed {
+    -fx-background-color: #0288D1; /* Even darker blue when pressed */
+    -fx-scale-x: 0.95; /* Scale down the button slightly when pressed */
+    -fx-scale-y: 0.95; /* Scale down vertically too */
+}
+
+.sideButton:released {
+    -fx-scale-x: 1.0; /* Reset scale after releasing */
+    -fx-scale-y: 1.0;
+}
+
+
+.mainMenuButton {
+    -fx-text-fill: #FFFFFF; /* White text for contrast */
+     -fx-background-color:transparent;/* A shade of blue that fits well with the existing theme */
+    -fx-border-color: #005A8D; /* Slightly darker blue for border */
+    -fx-border-width: 2;
+    -fx-border-radius: 25; /* Rounded corners */
+    -fx-background-radius: 25; /* Rounded corners */
+    -fx-padding: 12 24; /* Padding inside the button */
+    -fx-font-size: 18px; /* Larger font size for prominence */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+}
+
+.mainMenuButton:hover {
+    -fx-background-color: #005A8D; /* Darker blue on hover */
+    -fx-border-color: #003F6C; /* Even darker blue on hover */
+}
+
+.mainMenuButton:pressed {
+    -fx-background-color: #003F6C; /* Even darker blue when pressed */
+    -fx-border-color: #002B49; /* Darker border on press */
+}
+
+.slider {
+    -fx-background-color: #A9D6F1; /* Background color of the slider track */
+    -fx-padding: 10; /* Padding around the slider */
+    -fx-background-color:transparent;
+}
+
+.slider .track {
+    -fx-background-color: #E0E0E0; /* Background color of the slider track */
+    -fx-background-radius: 5; /* Rounded corners for the track */
+}
+
+.slider .track .track-background {
+    -fx-background-color: #A9D6F1; /* Background color of the unplayed part */
+    -fx-background-radius: 5; /* Rounded corners for the track background */
+}
+
+.slider .track .track-fill {
+    -fx-background-color: #4FC3F7; /* Color of the played part */
+    -fx-background-radius: 5; /* Rounded corners for the track fill */
+}
+
+.slider .thumb {
+    -fx-background-color: #003366; /* Darker blue for the thumb */
+    -fx-border-color: #005A8D; /* Slightly lighter blue for the thumb border */
+    -fx-border-width: 2; /* Border width around the thumb */
+    -fx-background-radius: 15; /* Rounded corners for the thumb */
+    -fx-pref-width: 20; /* Width of the thumb */
+    -fx-pref-height: 20; /* Height of the thumb */
+    -fx-padding: 5; /* Padding inside the thumb */
+}
+
+.control_buttons{
+    /*-fx-background-image:url("../images/play.png");*/
+     -fx-background-color:transparent;
+     -fx-background-size:30 30;
+     -fx-background-repeat:no-repeat;
+     -fx-background-position:center;
+
+}
+
+
+.control_buttons:hover {
+    -fx-background-color: #29B6F6; /* Slightly darker blue on hover */
+}
+
+.control_buttons:pressed {
+    -fx-background-color: #0288D1; /* Even darker blue when pressed */
+    -fx-scale-x: 0.95; /* Scale down the button slightly when pressed */
+    -fx-scale-y: 0.95; /* Scale down vertically too */
+}
+
+.control_buttons:released {
+    -fx-scale-x: 1.0; /* Reset scale after releasing */
+    -fx-scale-y: 1.0;
+}
+
+
+.date-time-label {
+    -fx-font-size: 16pt;
+    -fx-text-fill: #FFFFFF; /* White font color */
+    -fx-font-weight: bold;
+}

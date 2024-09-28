@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MediaPlayer.jnlp">
+  <information>
+    <title>MediaPlayer</title>
+    <vendor>asem</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MediaPlayer.jar" size="522233" download="eager" />
+    <jar href="lib\bridj-0.6.2.jar" size="878682" download="eager" />
+    <jar href="lib\codemodel-2.6.jar" size="152436" download="eager" />
+    <jar href="lib\gst1-java-core-1.4.0.jar" size="608626" download="eager" />
+    <jar href="lib\gst1-java-core-1.5.0-SNAPSHOT.jar" size="614654" download="eager" />
+    <jar href="lib\gst1-java-fx-0.9.0.jar" size="8681" download="eager" />
+    <jar href="lib\gst1-java-swing-0.9.0.jar" size="14142" download="eager" />
+    <jar href="lib\gstreamer-java-1.6-javadoc.jar" size="3020456" download="eager" />
+    <jar href="lib\jna-5.14.0.jar" size="1878533" download="eager" />
+    <jar href="lib\xom-1.2.10.jar" size="313253" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MediaPlayer" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="mediaplayer.MediaPlayer"  name="MediaPlayer" />
+  <update check="always"/>
+</jnlp>
