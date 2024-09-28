@@ -33,7 +33,7 @@ public class GStreamer extends Application {
  
 
     //use libcamerasrc
-    pipeline = (Pipeline) Gst.parseLaunch("videotestsrc ! appsink name=sink");
+    pipeline = (Pipeline) Gst.parseLaunch("libcamerasrc ! appsink name=sink");
     
     
     AppSink sink = (AppSink) pipeline.getElementByName("sink");
